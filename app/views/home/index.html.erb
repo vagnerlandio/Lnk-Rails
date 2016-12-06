@@ -1,2 +1,12 @@
 <h1>Home#index</h1>
 <%= render 'link/new_link' %>
+
+<div class="row">
+  <%= links.each do |link| %>
+    <ul>
+      <li><%= link_to link.out_url, link.slug, target: '_blank' %></li>
+      <li><%= link.clicks %></li>
+      <li><%= link_to truncate(link.in_url, length: 60), link.in_url %></li>
+    </ul>
+  <% end %>
+</div>

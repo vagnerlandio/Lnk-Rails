@@ -1,2 +1,9 @@
-<h1>Link#show</h1>
-<p>Find me in app/views/link/show.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p><%= link_to @link.out_url, @link.out_url, target: '_blank' %></p>
+<ul>
+  <li><%= @link.clicks %> clicks</li>
+</ul>
+<p><%= link_to @link.in_url, @link.in_url %></p>
+
+<%= link_to 'Back', root_path %>
