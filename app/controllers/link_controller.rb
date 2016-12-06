@@ -1,4 +1,6 @@
 class LinkController < ApplicationController
+  before_action :set_link, only: [:show]
+
   def show
     if params[:slug]
       @link = Link.find_by(slug: params[:slug])
