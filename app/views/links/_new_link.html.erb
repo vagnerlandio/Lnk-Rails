@@ -11,11 +11,13 @@
     </div>
   <% end %>
 
-  <div class="input-field col offset-s2 s6">
-    <i class="material-icons prefix">link</i>
-    <%= f.text_field :in_url, class: "validate", placeholder: "Your long URL here"%>
-  </div>
-  <div class="col s3">
-    <%= f.submit 'Shorten', class: "btn-large waves-effect waves-light teal lighten-1", id: "download-buttons" %>
+  <div class="row">
+    <div class="input-field col offset-s2 s6">
+      <i class="material-icons prefix">link</i>
+      <%= f.text_field :in_url, class: "validate", placeholder: "Your long URL here"%>
+    </div>
+    <div class="col s3">
+      <%= f.submit 'Shorten', class: "btn-large waves-effect waves-light teal lighten-1", id: "download-buttons" %>
+    </div>
   </div>
 <% end %>
