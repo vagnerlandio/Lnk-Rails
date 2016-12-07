@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "materialize";
+  $primary-color: color("blue", "lighten-5") !default;
+  $secondary-color: color("yellow", "base") !default;
+  .red.accent-2 {
+    background-color: #FD6E72 !important;
+  }
+
+  // ===  Features and fixes === //
+  // - heart icon on footer
+  .made-with-love {
+    position: relative;
+    top: 3px;
+  }
+  // - position of link icon on shorten form
+  .input-field .prefix {
+    top: 7px;
+  }
+  // - footer margin
+  .page-footer {
+    margin-top: 0px !important;
+    margin-bottom: -22px;
+  }
+  .parallax-container {
+    background-color: #ABE7DB;
+    z-index: 1;
+  }
+  .parallax img {
+    min-width: 50%;
+  }

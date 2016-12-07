@@ -1,1 +1,28 @@
-<h1>MAIN</h1>
+<div class="container">
+  <div class="section">
+
+    <div class="row">
+      <div class="col s12">
+        <table class="highlight">
+          <thead>
+            <tr>
+              <th>Shortened Link</th>
+              <th>Original Link</th>
+              <th>Clicks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @links.each do |link| %>
+              <tr>
+                <td><%= link_to link.out_url, link.slug, target: '_blank' %></td>
+                <td><%= link_to truncate(link.in_url, length: 60), link.in_url %></td>
+                <td><%= link.clicks %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
