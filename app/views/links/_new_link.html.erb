@@ -13,9 +13,7 @@
 
   <div class="input-field col offset-s2 s6">
     <i class="material-icons prefix">link</i>
-    <!-- <input id="icon_prefix" type="text" class="validate"> -->
-    <%= f.text_field :in_url, id: "icon_prefix", class: "validate" %>
-    <label for="icon_prefix">Your long URL here</label>
+    <%= f.text_field :in_url, class: "validate", placeholder: "Your long URL here"%>
   </div>
   <div class="col s3">
     <%= f.submit 'Shorten', class: "btn-large waves-effect waves-light teal lighten-1", id: "download-buttons" %>

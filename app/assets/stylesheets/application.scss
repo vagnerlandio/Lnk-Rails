@@ -43,3 +43,17 @@
   .parallax img {
     min-width: 50%;
   }
+
+  // - placeholder color
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #755261;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #755261;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #755261;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #755261;
+}
