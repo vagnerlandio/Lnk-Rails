@@ -6,11 +6,24 @@
 <%= render 'links/new_link', link: @link %>
 
 <div class="row">
-  <%= @links.each do |link| %>
+  <% @links.each do |link| %>
     <ul>
       <li><%= link_to link.out_url, link.slug, target: '_blank' %></li>
       <li><%= link.clicks %></li>
       <li><%= link_to truncate(link.in_url, length: 60), link.in_url %></li>
     </ul>
+  <% end %>
+</div>
+
+<div class="row">
+  <% @links.each do |link| %>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 link">
+      <p class="short_url"><%= link_to link.out_url, link.slug, target: '_blank' %></p>
+      <ul class="click_time">
+        <li><span class="badge"><span class="clicks"><%= link.clicks %></span></span> clicks</li>
+        <li><span class="time"><%= time_ago_in_words(link.created_at) %> ago</span></li>
+      </ul>
+      <p class="long_url"><%= link_to truncate(link.in_url, length: 60), link.in_url %></p>
+    </div>
   <% end %>
 </div>
