@@ -15,7 +15,7 @@
             <% @links.each do |link| %>
               <tr>
                 <td><%= link_to link.out_url, link.slug, target: '_blank' %></td>
-                <td><%= link_to truncate(link.in_url, length: 60), link.in_url %></td>
+                <td><%= truncate(link.in_url, length: 50) %></td>
                 <td><%= link.clicks %></td>
               </tr>
             <% end %>
