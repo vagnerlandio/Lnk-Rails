@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
 
   resources :links
-  root 'home#index'
+  root to: 'home#index'
 
-  get ':slug' => 'link#show'
+  get ':slug' => 'links#show'
 
   # get 'link/create'
 

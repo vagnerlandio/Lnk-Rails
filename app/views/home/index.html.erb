@@ -1,8 +1,12 @@
 <h1>Home#index</h1>
-<%= render 'link/new_link' %>
+<%= render 'home/_shared/navbar' %>
+<%= render 'home/_shared/banner' %>
+<%= render 'home/_shared/main' %>
+<%= render 'home/_shared/footer' %>
+<%= render 'links/new_link', link: @link %>
 
 <div class="row">
-  <%= links.each do |link| %>
+  <%= @links.each do |link| %>
     <ul>
       <li><%= link_to link.out_url, link.slug, target: '_blank' %></li>
       <li><%= link.clicks %></li>
