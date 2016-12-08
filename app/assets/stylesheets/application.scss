@@ -26,15 +26,21 @@
   .made-with-love {
     position: relative;
     top: 3px;
+    color: #ec1b0b;
+  }
+  // - name text on footer
+  .made-with-love-name {
+    color: #f9ee5c;
   }
   // - position of link icon on shorten form
   .input-field .prefix {
     top: 7px;
   }
   // - footer margin
-  .page-footer {
-    margin-top: 0px !important;
+  footer.page-footer {
+    margin-top: 0px;
     margin-bottom: -22px;
+    padding-top: 0px;
   }
   .parallax-container {
     background-color: #ABE7DB;
