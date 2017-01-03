@@ -1,24 +1,7 @@
-# README
+# Cute link
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Encurtador de links desenvolvido com Ruby on Rails 5 e Materialize.css.
 
-Things you may want to cover:
+## Preview
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[![20170102-210120_capture.gif](https://s30.postimg.org/i1mzp0ik1/20170102_210120_capture.gif)](https://postimg.org/image/bnxwlrdnx/)
